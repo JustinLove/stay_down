@@ -18,6 +18,10 @@
 
   $('.div_planet_list_panel').attr('data-bind', 'event: { ' +
     'mouseover: function () { model.hoverCelestialViewModels(true) }, ' +
-    'mouseleave: function () { model.hoverCelestialViewModels(false) }, ' + 
-    'click: function() {model.alwaysCelestialViewModels(!model.alwaysCelestialViewModels())} }')
+    'mouseleave: function () { model.hoverCelestialViewModels(false) }' +
+  '}')
+
+  $('.div_planet_list_control').on('click', function() {
+    model.alwaysCelestialViewModels(!model.alwaysCelestialViewModels())
+  })
 })()
