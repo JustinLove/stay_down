@@ -14,6 +14,7 @@
   "requires": [],
   "scenes": {
     "live_game": [
+      "coui://ui/mods/stay_down/stay_down.css",
       "coui://ui/mods/stay_down/stay_down.js"
     ]
   },

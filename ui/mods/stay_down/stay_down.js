@@ -8,7 +8,11 @@
   $('.div_player_list_panel').attr('data-bind', 'event: { ' +
     'mouseover: function () { model.hoverPlayerListPanel(true) }, ' +
     'mouseleave: function () { model.hoverPlayerListPanel(false) }, ' +
-    'click: function() {model.alwaysPlayerListPanel(!model.alwaysPlayerListPanel())} }')
+    'click: function() {model.alwaysPlayerListPanel(!model.alwaysPlayerListPanel())}' +
+  ' }')
+
+  $('.div_player_list_panel .control_chevron_auto')
+    .attr('data-bind', 'css: {control_chevron_reverse: alwaysPlayerListPanel}')
 
   model.alwaysCelestialViewModels = ko.observable(false).extend({local: 'stay_down_always_celestial'})
   model.hoverCelestialViewModels = ko.observable(false)
@@ -24,6 +28,9 @@
   $('.div_planet_list_control').on('click', function() {
     model.alwaysCelestialViewModels(!model.alwaysCelestialViewModels())
   })
+
+  $('.div_planet_list_panel .control_chevron_auto')
+    .attr('data-bind', 'css: {control_chevron_reverse: alwaysCelestialViewModels}')
 
   // hotfix for invalid syntax
   $('.div_planet_list_item input[data-bind="click: function () { model.celestialControlModel.($data.index()) }"]').remove()
