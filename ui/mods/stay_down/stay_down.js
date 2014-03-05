@@ -24,4 +24,7 @@
   $('.div_planet_list_control').on('click', function() {
     model.alwaysCelestialViewModels(!model.alwaysCelestialViewModels())
   })
+
+  // hotfix for invalid syntax
+  $('.div_planet_list_item input[data-bind="click: function () { model.celestialControlModel.($data.index()) }"]').remove()
 })()
