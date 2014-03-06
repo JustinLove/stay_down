@@ -3,7 +3,7 @@
   "build": "62225",
   "category": ["in-game", "ui"],
   "context": "client",
-  "date": "2014/03/04",
+  "date": "2014/03/06",
   "description": "Allow players and systems panels to be toggled always-on.",
   "display_name": "Stay Down",
   "enabled": true,
@@ -19,6 +19,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.0.0"
+  "version": "1.0.0"
 }
 
