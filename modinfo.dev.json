@@ -7,7 +7,7 @@
   "description": "Allow players and systems panels to be toggled always-on.",
   "display_name": "Stay Down",
   "enabled": true,
-  "forum": null,
+  "forum": "https://forums.uberent.com/threads/wip-stay-down.57424/",
   "id": "stay_down",
   "identifier": "com.wondible.pa.stay_down",
   "priority": 100,
