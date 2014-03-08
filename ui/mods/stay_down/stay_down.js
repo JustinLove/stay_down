@@ -7,9 +7,12 @@
 
   $('.div_player_list_panel').attr('data-bind', 'event: { ' +
     'mouseover: function () { model.hoverPlayerListPanel(true) }, ' +
-    'mouseleave: function () { model.hoverPlayerListPanel(false) }, ' +
-    'click: function() {model.alwaysPlayerListPanel(!model.alwaysPlayerListPanel())}' +
+    'mouseleave: function () { model.hoverPlayerListPanel(false) }' +
   ' }')
+
+  $('.div_player_list_control').on('click', function() {
+    model.alwaysPlayerListPanel(!model.alwaysPlayerListPanel())
+  })
 
   $('.div_player_list_panel .control_chevron_auto')
     .attr('data-bind', 'css: {control_chevron_reverse: alwaysPlayerListPanel}')
