@@ -36,7 +36,4 @@
     .attr('data-bind', 'css: {control_chevron_reverse: alwaysCelestialViewModels}')
 
   $('#version_info').css('text-align', 'center')
-
-  // hotfix for invalid syntax
-  $('.div_planet_list_item input[data-bind="click: function () { model.celestialControlModel.($data.index()) }"]').remove()
 })()
