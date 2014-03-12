@@ -3,8 +3,8 @@
   "build": "62225",
   "category": ["in-game", "ui"],
   "context": "client",
-  "date": "2014/03/08",
-  "description": "Allow players and systems panels to be toggled always-on.",
+  "date": "2014/03/11",
+  "description": "Allow players and systems panels to be toggled always-on. Expected to be obsolete post-62519.",
   "display_name": "Stay Down",
   "enabled": true,
   "forum": "https://forums.uberent.com/threads/wip-stay-down.57424/",
@@ -19,6 +19,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.0.1"
+  "version": "1.1.0"
 }
 

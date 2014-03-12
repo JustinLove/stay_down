@@ -1,3 +1,12 @@
 .control_chevron_reverse {
   -webkit-transform: scaleY(-1);
 }
+
+.stay_down_obsolete {
+  color: white;
+  font-size: 3vh;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  pointer-events: none;
+}
